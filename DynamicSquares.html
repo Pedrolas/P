@@ -28,10 +28,16 @@ function makeSquare(size, color){
 	squares accordingly. Calls the makeSquare function when needed.
 */
 function addSquares(){
-	  var div = document.getElementById('inputNumber').value;
-		var div = document.getElementById('inputColor').value;
-	  var div = document.getElementById('inputSize').value;
+	  var number = document.getElementById('inputNumber').value;
+		var color = document.getElementById('inputColor').value;
+	  var size = document.getElementById('inputSize').value;
+
+
+		  for(var i=0;i<number;i++){
+				makeSquare(size, color);
+			}
 	// Your task is to make this work...
+
 }
 
 </script>
